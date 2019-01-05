@@ -63,10 +63,7 @@ public class Division extends PayrollBase {
         if (this.divisionCode != other.divisionCode) {
             return false;
         }
-        if (!Objects.equals(this.divisionName, other.divisionName)) {
-            return false;
-        }
-        return true;
+        return Objects.equals(this.divisionName, other.divisionName);
     }
 
     @Override
